@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QVector>
+
+#include "Task.h"
 
 namespace Ui {
 class MainWindow;
@@ -20,6 +23,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QVector<Task*> mTasks;
 };
 
 #endif // MAINWINDOW_H
