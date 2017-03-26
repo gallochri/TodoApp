@@ -31,8 +31,4 @@ void MainWindow::addTask()
         mTasks.append(task);
         ui->taskLayout->addWidget(task);
     }
-    qDebug() << "Adding new task";
-    Task* task = new Task("Untitled task");
-    mTasks.append(task);
-    ui->taskLayout->addWidget(task);
 }
